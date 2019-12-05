@@ -1,4 +1,4 @@
-Minimal example that uses the hello world server example.
+Minimal example that uses the [hello world server example](https://raw.githubusercontent.com/grpc/grpc/master/examples/cpp/helloworld/greeter_server.cc).
 
 ```
 ./install_debs.sh
