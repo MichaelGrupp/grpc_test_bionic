@@ -8,7 +8,7 @@ make
 
 ulimit -c unlimited
 if ! ./greeter_server; then
-  gdb ./greeter_server core
+  gdb -batch -ex "run" -ex "bt" ./greeter_server core
 else
   echo "wohooo! gRPC survived!"
 fi

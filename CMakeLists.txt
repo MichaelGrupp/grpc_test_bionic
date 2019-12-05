@@ -12,7 +12,7 @@ execute_process(COMMAND ${PROTOBUF_PROTOC_EXECUTABLE}
   -I ${CMAKE_SOURCE_DIR}
   --cpp_out=${CMAKE_SOURCE_DIR}
   --grpc_out=${CMAKE_SOURCE_DIR}
-  --plugin=protoc-gen-grpc=/usr/bin/grpc_cpp_plugin  # requires protobuf-compiler-grpc
+  --plugin=protoc-gen-grpc=/usr/bin/grpc_cpp_plugin
   ${CMAKE_SOURCE_DIR}/helloworld.proto
   )
 set(PROTOC_OUTPUT
